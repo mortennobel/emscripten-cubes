@@ -375,7 +375,7 @@ void init(){
 
 void mainLoop() {
 #ifdef EMSCRIPTEN
-    int fps = 60;
+    int fps = 0;
     int simulate_infinite_loop = 1;
     emscripten_set_main_loop(update, fps, simulate_infinite_loop);
 #else
